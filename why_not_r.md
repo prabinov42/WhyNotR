@@ -1,13 +1,13 @@
 Why not R?
 ================
 Peter Rabinovitch
-2022-10-16 13:10:10
+2022-11-04 16:13:44
 
 # Introduction
 
-Data is the foundation for business. Our business schools, both
-undergraduate and MBA levels, need to prepare students for the data
-driven world, where data is abundant, messy, heterogeneous, and
+Data is the foundation for business. Our business schools, at both
+undergraduate and MBA levels, need to prepare students for the
+data-driven world, where data is abundant, messy, heterogeneous, and
 potentially valuable.
 
 The tools being used are frequently sub-optimal - likely the tools that
@@ -15,28 +15,28 @@ the professors are comfortable with, rather than what is truly useful in
 today’s world. Changing the set of tools students learn will doubtless
 cause some transitional pain for the faculty, but this can be minimized
 by choosing a small set of tools that can serve the students both in
-their academic career, as well as once they graduate.
+their academic careers, as well as once they graduate.
 
 In this document we propose using the open source package R for such a
 purpose. Many will doubtless be aware of R’s facility with statistics,
-as that is what it was originally developed for. However it currently
+as that is what it was originally developed for. However, it currently
 has many more applications beyond the realm of statistics, and later in
 this document we will demonstrate, via a selection of examples, some
 that cover the entire gamut of quantitative business courses.
 
 One key advantage of R is that it is open source (i.e. free) and there
 are many free resources (eg online text books) that should enable
-students and faculty to make this transition at no cost - and have no
+students and faculty to make this transition at no cost - and with no
 recurring costs for software licenses, nor textbook purchases.
 
 One frequent concern from people who have not used open source tools is
-where they will get support - one only has to look at the range of
-online resources for R to dispel this concern. The community is
-incredibly helpful, and usually the answer to any questions is a Google
-search away.
+where they will get support. One only has to look at the range of online
+resources for R to dispel this concern. The community is incredibly
+helpful, and usually the answer to any questions is a Google search
+away.
 
 Once the right tool is in place, this opens up the possibility of
-reforming the curriculum to be more adapted to the tool, and today’s
+reforming the curriculum to be more adapted to the tool, and to today’s
 business world.
 
 # Why R
@@ -44,13 +44,13 @@ business world.
 R is an open source statistical programming language, and together with
 RStudio (a free development environment) and a huge number of freely
 available libraries on CRAN (the comprehensive R archive network) and
-elsewhere make up the R ecosystem.
+elsewhere, makes up the R ecosystem.
 
 As a statistical language, you’d be surprised if it did not handle
 statistics well - of course it does. But it also handles all sorts of
 other quantitative and algorithmic tasks equally well.
 
-One thing you and you students will have to get used to is that it is
+One thing you and your students will have to get used to is that it is
 command driven - you write code. You do not progress by choosing menu
 items. This creates a bit of a learning curve , but has huge benefits,
 as you will see below, or even better, see this
@@ -59,17 +59,17 @@ as you will see below, or even better, see this
 Start from the premise that no analysis is truly one-off. There are
 always changes to the data as glitches are discovered, new analyses are
 requested with ‘just one more thing’, and redoing the same analysis
-monthly, quarterly or yearly. And the longer the gap between when you
+monthly, quarterly, or yearly. And the longer the gap between when you
 last performed the analysis and when you need to redo it, the harder it
 is to remember all the steps you took.
 
 Reproducibility not only saves you time and effort, but prevents you
 from looking stupid when you can not redo the same analysis and get the
 same results. R and RStudio facilitate reproducibility as your entire
-analysis: code, plots, results, explanatory text are all in the same
-document and can be rebuilt at the push of a button. This file is a text
-document, and so can be shared easily, version controlled, and
-collaborated with via, for example github.
+analysis – code, plots, results, and explanatory text – are all in the
+same document and can be rebuilt at the push of a button. This file is a
+text document, and so can be shared easily, version controlled, and
+collaborated with via, for example, github.
 
 The results can be in a multitude of formats, from html to slides to pdf
 files to, yes, if needed, even Excel files.
@@ -81,7 +81,7 @@ The analyst no longer has to remember all the fiddly details because
 they are right there in the document.
 
 R has easy integration to corporate databases (eg SQL), can generate
-parametrized reports simply which can be automatically update and run,
+parametrized reports simply which can be automatically updated and run,
 and you can build interactive web applications with it via the Shiny
 toolkit.
 
@@ -93,8 +93,8 @@ What follows is a series of examples showing how R can be used for
 typical problems in existing quantitative business courses. Doubtless
 you may find some of your favourite problems missing from this list, but
 I know R is up to the task. And as R’s forte is statistics, we will not
-dwell on stats problems here, but rather focus on less obviously R
-friendly problems.
+dwell on stats problems here, but rather focus on less obviously
+R-friendly problems.
 
 We keep things fairly simple - but of course that means we stay away
 from the fancier, and perhaps more optimal approaches, to better
@@ -102,7 +102,7 @@ illustrate.
 
 At the start we will explain lots of details, but as we progress we’ll
 explain less. The point is not for the reader to understand all the
-details 9yet), but rather to see what is possible with relatively little
+details (yet) but rather to see what is possible with relatively little
 effort.
 
 ## Budgets
@@ -985,8 +985,8 @@ sch %>% sch_activities() %>% select(id, name, duration)
     ## 7     7 HVAC              2
     ## 8     8 Finishing         3
 
-We can see what tasks have to be completed before the next one starts,
-for example the walls have to be finished before you can start on the
+We can see what tasks have to be completed before the next one starts.
+For example the walls have to be finished before you can start on the
 plumbing.
 
 ``` r
@@ -1109,7 +1109,7 @@ it is expensive.
 Python is a great programming language, but installation (especially
 with different versions and environments) can be messy. In addition, it
 does not have the ease of creating markdown documents in a variety of
-formats like R/RStudio does. (Although the latest versions fo RStudio
+formats like R/RStudio does. (Although the latest versions of RStudio
 can do very similar things with python & quartz). Once the basics of any
 programming language are understood, it is relatively easy to transition
 to another one if desired, so starting with R and switching to python
